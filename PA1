@@ -1,1 +1,57 @@
+//(PA1b.java)
+Scanner input = new Scanner(System.in);
 
+	        // Prompt the user
+	        System.out.print("Enter total inches: ");
+	        int totalInches = input.nextInt();
+
+	        // Conversion constants
+	        int inchesPerFoot = 12;
+	        int inchesPerYard = 36;
+
+	        // Calculate yards
+	        int yards = totalInches / inchesPerYard;
+	        int remainingInches = totalInches % inchesPerYard;
+
+	        // Calculate feet
+	        int feet = remainingInches / inchesPerFoot;
+
+	        // Remaining inches
+	        int inches = remainingInches % inchesPerFoot;
+
+	        // Display the result
+	        System.out.println(totalInches + " inches is equal to:");
+	        System.out.println(yards + " yard(s), " + feet + " foot/feet, and " + inches + " inch(es).");
+
+}
+}
+
+
+
+
+
+
+//(PA1a.java)
+        Scanner input = new Scanner(System.in);
+
+        // Prompt the user for input
+        System.out.print("Enter number of yards: ");
+        int yards = input.nextInt();
+
+        System.out.print("Enter number of feet: ");
+        int feet = input.nextInt();
+
+        System.out.print("Enter number of inches: ");
+        int inches = input.nextInt();
+
+        // Conversion constants
+        int inchesPerFoot = 12;
+        int feetPerYard = 3;
+
+        // Compute total inches
+        int totalInches = (yards * feetPerYard * inchesPerFoot) + (feet * inchesPerFoot) + inches;
+
+        // Display the result
+        System.out.println("The total number of inches = " + totalInches);
+    }
+}
